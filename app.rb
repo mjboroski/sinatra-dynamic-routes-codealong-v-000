@@ -20,9 +20,8 @@ class App < Sinatra::Base
   end
 
   get '/multiply/:num1/:num2' do
-    @medicine = all_the_medicines.select do |medicine|
-      @product = params[:num1]*params[:num2]
-      "#{@product}"
+    @product = params[:num1]*params[:num2]
+    "#{@product}"
   end
 
 end
